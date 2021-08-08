@@ -1,0 +1,33 @@
+@import "../../assets/scss/variables";
+
+.rating__filter {
+  margin-bottom: 20px;
+
+  .active {
+    font-weight: 700;
+  }
+
+  .title {
+    margin-bottom: 10px;
+  }
+
+  .rating__items {
+    cursor: pointer;
+    margin-bottom: 2px;
+    font-size: 12px;
+
+    & > * {
+      pointer-events: none;
+    }
+
+    &:hover {
+      span {
+        color: $color-milano-red;
+      }
+    }
+
+    i {
+      font-size: 12px;
+    }
+  }
+}

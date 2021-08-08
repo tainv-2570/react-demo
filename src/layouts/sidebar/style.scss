@@ -1,0 +1,14 @@
+@import "../../assets/scss/mixins";
+@import "../../assets/scss/variables";
+
+.main__sidebar {
+    @include box(230px, calc(100vh - 60px));
+    @include flex(column, flex-start, flex-start);
+    position: fixed;
+    top: 60px;
+    float: left;
+    padding: 20px;
+    border-right: 1px solid $color-gallery;
+    overflow-y: auto;
+    overflow-x: hidden;
+}

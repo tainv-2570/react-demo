@@ -1,0 +1,45 @@
+@import "../../assets/scss/mixins";
+@import "../../assets/scss/variables";
+
+.price__filter {
+  font-size: 12px;
+
+  .title {
+    margin-bottom: 10px;
+  }
+
+  ul {
+    margin-bottom: 10px;
+  }
+
+  li {
+    margin-bottom: 4px;
+
+    &:hover {
+      color: $color-milano-red;
+      cursor: pointer;
+    }
+  }
+
+  .price-range__input {
+    @include flex(row, space-between, center);
+    padding-top: 10px;
+
+    button {
+      @include box(22px);
+      border-radius: 50%;
+      border: 1px solid $color-silver;
+      font-size: 10px;
+      padding: 0;
+    }
+
+    label {
+      font-weight: 700;
+    }
+
+    input {
+      margin: 0 4px;
+      max-width: 50px;
+    }
+  }
+}

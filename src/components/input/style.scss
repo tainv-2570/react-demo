@@ -1,0 +1,64 @@
+@import "../../assets/scss/mixins";
+@import "../../assets/scss/variables";
+
+.input__group {
+  @include flex(row, flex-start, center, nowrap);
+  border: solid 1px $color-gallery;
+  height: 30px;
+  max-width: 350px;
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+
+  &:focus-within {
+    border: solid 1px $color-astral;
+  }
+
+  input {
+    border: 0;
+    height: 100%;
+    padding: 6px 12px;
+    width: 100%;
+
+    @include placeholder {
+      font-size: 15px;
+      color: $color-dusty-gray;
+    }
+  }
+
+  button {
+    height: 100%;
+    border: 0;
+  }
+
+  &.btn--left {
+    @include flex-direction(row-reverse);
+  }
+
+  &.btn--white {
+    input {
+      padding-left: 5px;
+    }
+
+    button {
+      background-color: $color-white;
+
+      i {
+        margin-bottom: 4px;
+        color: $color-astral;
+      }
+    }
+  }
+
+  &.btn--golden {
+    button {
+      padding: 0 30px;
+      background-color: $color-golden;
+
+      i {
+        @include box(14px);
+        color: $color-night-rider;
+      }
+    }
+  }
+}
