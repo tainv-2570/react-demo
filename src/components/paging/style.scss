@@ -1,0 +1,48 @@
+@import "../../assets/scss/mixins";
+@import "../../assets/scss/variables";
+
+.paging {
+  clear: both;
+  display: block;
+  width: calc(100% - 20px);
+  padding: 10px 0 5px;
+  margin: 0 10px;
+
+  nav {
+    @include flex(row, center, center);
+    height: 50px;
+    background-color: $color-gallery;
+
+    ul {
+      @include flex;
+    }
+
+    button {
+      border: 0;
+      outline: 0;
+      padding: 0 8 px;
+      font-size: 17px;
+      color: $color-astral;
+      background-color: $color-gallery;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      &.active {
+        font-weight: 700;
+        color: $color-black;
+      }
+
+      &.paging__disable {
+        color: $color-night-rider;
+        pointer-events: none;
+      }
+
+      i {
+        margin: 0 5px;
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+@import "../../assets/scss/mixins";
+@import "../../assets/scss/variables";
+
+header {
+    position: fixed;
+    width: 100%;
+    padding: 10px;
+    z-index: 100;
+    background-color: $color-midnight;
+}
+
+.header__content {
+    @include flex(row, flex-start, center);
+}
+
+.logo__group {
+    margin-right: 16px;
+}
+
+.logo__image {
+    @include box(40px);
+    margin-right: 12px;
+}
+
+.logo__text {
+    font-size: 30px;
+    font-weight: 700;
+    color: $color-white;
+    text-decoration: none;
+}

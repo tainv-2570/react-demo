@@ -1,0 +1,40 @@
+@import "../../assets/scss/variables";
+
+.category__item {
+  cursor: pointer;
+  font-size: 12px;
+  margin-bottom: 8px;
+  pointer-events: all;
+
+  & > * {
+    pointer-events: none;
+  }
+
+  i {
+    margin-right: 5px;
+  }
+
+  &:hover {
+    & > span {
+      color: $color-milano-red;
+    }
+
+    ul {
+      color: $color-black;
+    }
+  }
+
+  &.active {
+    display: block !important;
+
+    & > span {
+      font-weight: 700;
+    }
+  }
+}
+
+.lvl0 ~ ul,
+.lvl1 ~ ul {
+  margin-top: 10px;
+  margin-left: 10px;
+}

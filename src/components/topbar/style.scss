@@ -1,0 +1,19 @@
+@import "../../assets/scss/variables";
+
+.top-bar {
+  .result-count {
+    float: left;
+    font-size: 11px;
+    margin: 10px 10px 5px;
+    color: $color-cape-palliser;
+  }
+
+  .sort-by {
+    margin: 10px 10px 5px;
+    float: right;
+
+    label {
+      margin: 5px;
+    }
+  }
+}

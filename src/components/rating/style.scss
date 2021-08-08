@@ -1,0 +1,15 @@
+@import "../../assets/scss/variables";
+
+i.rating-star {
+    color: $color-golden;
+    font-size: 14px;
+    margin-right: 3px;
+}
+
+.fa__star::before {
+    content: "\2605";
+}
+
+.fa__star-o::before {
+    content: "\2606";
+}
